@@ -4,6 +4,7 @@ namespace Database\Seeders;
 
 use Illuminate\Database\Seeder;
 use Illuminate\Support\Facades\DB;
+use App\Models\TransaksiDetail;
 
 class TransaksiDetailSeeder extends Seeder
 {
@@ -28,7 +29,7 @@ class TransaksiDetailSeeder extends Seeder
         ];
 
         foreach ($rows as $row) {
-            DB::table('transaksis')->insert($row);
+            TransaksiDetail::create($row);
         }
     }
 }
