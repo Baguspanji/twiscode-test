@@ -17,16 +17,14 @@ class TransaksiSeeder extends Seeder
     {
         $rows = [
             [
-                'transaksi_id' => 1,
-                'harga' => 10000,
-                'jumlah' => 2,
-                'sub_total' => 20000,
+                'tanggal_order' => date('Y-m-d H:i:s', strtotime('2020-12-01 11:30:00')),
+                'status_lunas' => 1,
+                'tanggal_pembayaran' => date('Y-m-d H:i:s', strtotime('2020-12-01 12:00:00')),
             ],
             [
-                'transaksi_id' => 2,
-                'harga' => 6250,
-                'jumlah' => 4,
-                'sub_total' => 25000,
+                'tanggal_order' => date('Y-m-d H:i:s', strtotime('2020-12-01 11:30:00')),
+                'status_lunas' => 2,
+                'tanggal_pembayaran' => date('Y-m-d H:i:s', strtotime('2020-12-01 12:00:00')),
             ]
         ];
 
